@@ -1,28 +1,18 @@
-Tinytest.add("Foundation SCSS variables should be available", function(test) {
-    var onscreenDiv = OnscreenDiv(Meteor.render(function() {
-        return '<div class="test-row-width"></div>';
-    }));
+Tinytest.add("foundation - Styles should be applied", function (test) {
+    var component = UI.render(Template.foundationTestTemplate);
+    var tI = component.templateInstance;
+    UI.insert(component, document.body);
 
-    var styledDiv = onscreenDiv.div.firstChild;
+    test.equal(getStyleProperty(tI.find('a'), "background-color"), "rgb(0, 140, 186)");
 
-    test.equal(getStyleProperty(styledDiv, "width"), "50%");
-
-    onscreenDiv.kill();
+    $('.foundationTestTemplate').remove();
 });
 
-Tinytest.add("Foundation SCSS class should be extendable", function(test) {
-    var onscreenDiv = OnscreenDiv(Meteor.render(function() {
-        return '<a class="test-button-extended"></a>';
-    }));
-
-    var styledDiv = onscreenDiv.div.firstChild;
-
-    test.equal(getStyleProperty(styledDiv, "display"), "inline-block");
-    test.equal(getStyleProperty(styledDiv, "text-align"), "center");
-
-    onscreenDiv.kill();
+Tinytest.add("foundation - Kitchen Sink should be available", function (test) {
+    var onscreenDiv = UI.render(Template.kitchensink);
+    test.isTrue(onscreenDiv.isInited);
 });
 
-Tinytest.add("Foundation JavaScript extensions should be loaded", function(test) {
+Tinytest.add("foundation - JavaScript extensions should be loaded", function (test) {
     test.isTrue(typeof $.fn.foundation !== 'undefined');
 });

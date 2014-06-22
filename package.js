@@ -33,9 +33,10 @@ Package.on_use(function (api) {
 
 Package.on_test(function(api) {
   api.use("foundation5-sass");
-  api.use(["scss", "tinytest", "test-helpers"]);
+  api.use(["scss", "tinytest", "test-helpers", "templating"]);
 
   api.add_files([
+      "test.html",
       "test.scss",
       "test.js"
     ], "client");
