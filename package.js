@@ -5,8 +5,7 @@ Package.describe({
 Package.on_use(function (api) {
   api.use("scss", ['client', 'server']);
   api.imply('scss', ['client', 'server']);
-  api.use('ui', 'client');
-  api.use('jquery', 'client');
+  api.use(['ui', 'jquery', 'templating'], 'client');
 
   api.add_files([
     "js/vendor/modernizr.js",
@@ -27,6 +26,7 @@ Package.on_use(function (api) {
     "js/foundation/foundation.tab.js",
     "js/foundation/foundation.tooltip.js",
     "js/foundation/foundation.topbar.js",
+    "kitchensink.html",
     "foundation.js"
   ], "client");
 });
