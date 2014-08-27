@@ -1,10 +1,10 @@
 {
   "name": "foundation5-sass",
   "description": "Foundation 5 with Sass support",
-  "homepage": "https://github.com/lgollut/meteor-foundation5-sass",
-  "author": "Louis Gollut",
-  "version": "0.0.13",
-  "git": "https://github.com/lgollut/meteor-foundation5-sass.git",
+  "homepage": "https://github.com/matthewforr/meteor-foundation5-sass",
+  "author": "Matthew Forr",
+  "version": "0.0.14",
+  "git": "https://github.com/matthewforr/meteor-foundation5-sass.git",
   "packages": {
     "scss": ""
   }
