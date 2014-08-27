@@ -14,7 +14,7 @@ Please use v0.0.12 or above with Meteor 0.8.0. For those stuck in earlier versio
 
 ### Add the scss file
 
-add `@import "packages/foundation5-sass/foundation";` to your main .scss file
+add `@import "packages/matthew:foundation5-sass/foundation";` to your main .scss file
 
 If you want to configure Foundation, copy the `_settings.scss` from the root of this project into your app and add `@import "_settings.scss";` before `@import "packages/foundation5-sass/foundation";`.
 
