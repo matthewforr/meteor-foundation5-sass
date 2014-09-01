@@ -1,22 +1,25 @@
-# meteor-foundation5-sass
+# Foundation5-sass
 
-A Foundation 5 Meteor package with sass support.
+A Foundation 5.3.0 Meteor package with sass support.
 
-## Foundation Version
+Why use this package?
 
-This package use version 5.3.0 of Foundation
+* You can use _settings.scss and override Foundation defaults
+* You can use Foundation Javascript plugins easily
+* You can have a zero-effort and lightweight styleguide with the [Foundation Kitchensink](http://foundation.zurb.com/docs/components/kitchen_sink.html)
+* Committed to tracking closely with the latest version of Foundation
 
-## Meteor 0.8.0
+## Meteor 0.9.0+
 
-Please use v0.0.12 or above with Meteor 0.8.0. For those stuck in earlier version of Meteor, get v0.0.11.
+Please use v0.0.15 or above with Meteor 0.9.0. For those stuck in earlier version of Meteor, get v0.0.13.
 
 ## How to use
 
 ### Add the scss file
 
-add `@import ".meteor/local/build/programs/server/assets/packages/matthew:foundation5-sass/foundation";` to your main .scss file
+Add `@import ".meteor/local/build/programs/server/assets/packages/matthew:foundation5-sass/foundation";` to your main .scss file. **This will be relative to where you keep your sass files**
 
-If you want to configure Foundation, copy the `_settings.scss` from the root of this project into your app and add `@import "_settings.scss";` before `@import ".meteor/local/build/programs/server/assets/packages/matthew:foundation5-sass/foundation";`.
+If you want to configure Foundation, copy the `_settings.scss` from the root of this project into your app and add `@import "/path/to/settings";` before `@import ".meteor/local/build/programs/server/assets/packages/matthew:foundation5-sass/foundation";`.
 
 ### Initialize Foundation js
 
@@ -24,3 +27,11 @@ add `{{initFoundation}}` at the very end of the body tag of your page or at the 
 
 ### Throw in the kitchen sink
 This package makes the Foundation [Kitchen Sink](foundation.zurb.com/docs/components/kitchen_sink.html) available so you can have a straightforward styleguide. Just add `{{> kitchensink}}` to a template or layout and you will have everything.
+
+## Testing
+
+You can test this package with meteor test-packages. Currently it checks the following items:
+
+- Are base foundation styles applied?
+- Can it find the kitchen sink template?
+- Is the $.fn.foundation global object loaded?
