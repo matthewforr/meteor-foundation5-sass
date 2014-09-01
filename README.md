@@ -28,6 +28,24 @@ add `{{initFoundation}}` at the very end of the body tag of your page or at the 
 ### Throw in the kitchen sink
 This package makes the Foundation [Kitchen Sink](foundation.zurb.com/docs/components/kitchen_sink.html) available so you can have a straightforward styleguide. Just add `{{> kitchensink}}` to a template or layout and you will have everything.
 
+### Manually adding the package
+
+This is an option if you are running into problems.
+
+First, checkout this package from github using clone to desktop, etc.
+
+Then, from your meteor project directory:
+
+```
+mkdir -p packages
+mrt link-package /path/to/meteor-foundation5-sass
+meteor add meteor-foundation5-sass
+```
+
+That should do it. When you add the Sass files you will add it relative to it like this: `@import "/path/to/packages/meteor-foundation5-sass/foundation";`
+
+
+
 ## Testing
 
 You can test this package with meteor test-packages. Currently it checks the following items:
