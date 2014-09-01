@@ -4,7 +4,9 @@ Package.describe({
   git: "https://github.com/matthewforr/meteor-foundation5-sass.git"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+  api.versionsFrom('METEOR@0.9.0');
+
   api.use("fourseven:scss@0.9.4", ['client', 'server']);
   api.imply('fourseven:scss@0.9.4', ['client', 'server']);
   api.use(['ui', 'jquery', 'templating'], 'client');
@@ -86,9 +88,11 @@ Package.on_use(function (api) {
   ], "server");
 });
 
-Package.on_test(function(api) {
+Package.onTest(function(api) {
+  api.versionsFrom('METEOR@0.9.0');
+
   api.use("matthew:foundation5-sass@0.1.15");
-  api.use(["fourseven:scss@0.9.5", "tinytest", "test-helpers", "templating"]);
+  api.use(["fourseven:scss@0.9.5", "tinytest@1.0.0", "test-helpers", "templating"]);
 
   api.addFiles([
       "test.html",
