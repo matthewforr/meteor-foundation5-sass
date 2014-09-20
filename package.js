@@ -38,7 +38,8 @@ Package.onUse(function (api) {
   api.addFiles([
     "_foundation.scss",
     "_settings.scss",
-    "scss/_foundation.scss",
+    "scss/foundation.scss",
+    "scss/normalize.scss",
     "scss/foundation/_functions.scss",
     "scss/foundation/_settings.scss",
     "scss/foundation/components/_accordion.scss",
@@ -55,7 +56,6 @@ Package.onUse(function (api) {
     "scss/foundation/components/_global.scss",
     "scss/foundation/components/_grid.scss",
     "scss/foundation/components/_icon-bar.scss",
-    "scss/foundation/components/_iconbar.scss",
     "scss/foundation/components/_inline-lists.scss",
     "scss/foundation/components/_joyride.scss",
     "scss/foundation/components/_keystrokes.scss",
@@ -68,12 +68,10 @@ Package.onUse(function (api) {
     "scss/foundation/components/_pricing-tables.scss",
     "scss/foundation/components/_progress-bars.scss",
     "scss/foundation/components/_range-slider.scss",
-    "scss/foundation/components/_reveal-new.scss",
     "scss/foundation/components/_reveal.scss",
     "scss/foundation/components/_side-nav.scss",
     "scss/foundation/components/_split-buttons.scss",
     "scss/foundation/components/_sub-nav.scss",
-    "scss/foundation/components/_switch.scss",
     "scss/foundation/components/_switches.scss",
     "scss/foundation/components/_tables.scss",
     "scss/foundation/components/_tabs.scss",
@@ -82,9 +80,7 @@ Package.onUse(function (api) {
     "scss/foundation/components/_tooltips.scss",
     "scss/foundation/components/_top-bar.scss",
     "scss/foundation/components/_type.scss",
-    "scss/foundation/components/_visibility.scss",
-    "scss/foundation/components/_xy-center.scss",
-    "scss/normalize.scss"
+    "scss/foundation/components/_visibility.scss"
   ], "server");
 });
 
