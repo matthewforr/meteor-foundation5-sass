@@ -1,6 +1,6 @@
 # Foundation5-sass
 
-A Foundation 5.3.0 Meteor package with sass support.
+A Foundation 5.4.4 Meteor package with sass support.
 
 Why use this package?
 

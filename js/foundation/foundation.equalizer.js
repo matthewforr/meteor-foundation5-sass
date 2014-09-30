@@ -4,7 +4,7 @@
   Foundation.libs.equalizer = {
     name : 'equalizer',
 
-    version : '5.3.0',
+    version : '{{VERSION}}',
 
     settings : {
       use_tallest: true,
@@ -70,5 +70,5 @@
       });
     }
   };
-})(jQuery, this, this.document);
+})(jQuery, window, window.document);
 

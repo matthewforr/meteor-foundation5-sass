@@ -4,7 +4,7 @@
   Foundation.libs.interchange = {
     name : 'interchange',
 
-    version : '5.3.0',
+    version : '{{VERSION}}',
 
     cache : {},
 
@@ -341,4 +341,4 @@
 
   };
 
-}(jQuery, this, this.document));
+}(jQuery, window, window.document));
