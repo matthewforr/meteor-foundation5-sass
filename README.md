@@ -17,9 +17,9 @@ Please use v0.0.15 or above with Meteor 0.9.0. For those stuck in earlier versio
 
 ### Add the scss file
 
-Add `@import ".meteor/local/build/programs/server/assets/packages/matthew:foundation5-sass/foundation";` to your main .scss file. **This will be relative to where you keep your sass files**
+Add `@import ".meteor/local/build/programs/server/assets/packages/matthew_foundation5-sass/foundation";` to your main .scss file. **This will be relative to where you keep your sass files**
 
-If you want to configure Foundation, copy the `_settings.scss` from the root of this project into your app and add `@import "/path/to/settings";` before `@import ".meteor/local/build/programs/server/assets/packages/matthew:foundation5-sass/foundation";`.
+If you want to configure Foundation, copy the `_settings.scss` from the root of this project into your app and add `@import "/path/to/settings";` before `@import ".meteor/local/build/programs/server/assets/packages/matthew_foundation5-sass/foundation";`.
 
 ### Initialize Foundation js
 
