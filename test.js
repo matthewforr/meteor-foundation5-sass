@@ -9,10 +9,10 @@ Tinytest.add("foundation - Styles should be applied", function (test) {
     elem.parentNode.removeChild(elem);
 });
 
-Tinytest.add("foundation - Kitchen Sink should be available", function (test) {
-    var onscreenDiv = UI.render(Template.kitchensink);
-    test.isTrue(onscreenDiv.view.isCreated);
-});
+// Tinytest.add("foundation - Kitchen Sink should be available", function (test) {
+//     var onscreenDiv = UI.render(Template.kitchensink);
+//     test.isTrue(onscreenDiv.view.isCreated);
+// });
 
 Tinytest.add("foundation - JavaScript extensions should be loaded", function (test) {
     test.isTrue(typeof $.fn.foundation !== 'undefined');
