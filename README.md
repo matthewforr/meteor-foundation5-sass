@@ -2,6 +2,8 @@
 
 A Foundation 5.4.4 Meteor package with sass support.
 
+[![Codeship Status for matthewforr/meteor-foundation5-sass](https://codeship.io/projects/e49f4990-3619-0132-02be-66e2e8c2d9ae/status)](https://codeship.io/projects/41324)
+
 Why use this package?
 
 * You can use _settings.scss and override Foundation defaults
