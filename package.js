@@ -87,7 +87,7 @@ Package.onUse(function (api) {
 Package.onTest(function(api) {
   api.versionsFrom('METEOR@0.9.0');
 
-  api.use("matthew:foundation5-sass@0.1.15");
+  api.use("matthew:foundation5-sass@0.1.16");
   api.use(["fourseven:scss@0.9.6", "tinytest@1.0.0", "test-helpers", "templating"]);
 
   api.addFiles([
