@@ -11,7 +11,7 @@ Why use this package?
 * You can have a zero-effort and lightweight styleguide with the [Foundation Kitchensink](http://foundation.zurb.com/docs/components/kitchen_sink.html)
 * Committed to tracking closely with the latest version of Foundation
 
-## Meteor 0.9.0+
+## Meteor 1.0.0+
 
 Please use v0.0.15 or above with Meteor 0.9.0. For those stuck in earlier version of Meteor, get v0.0.13.
 
