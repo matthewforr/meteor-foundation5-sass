@@ -1,6 +1,6 @@
 # Foundation5-sass
 
-A Foundation 5.4.4 Meteor package with sass support.
+A Foundation 5.4.7 Meteor package with sass support.
 
 [![Codeship Status for matthewforr/meteor-foundation5-sass](https://codeship.io/projects/e49f4990-3619-0132-02be-66e2e8c2d9ae/status)](https://codeship.io/projects/41324)
 
