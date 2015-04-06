@@ -8,8 +8,8 @@ Package.describe({
 Package.onUse(function (api) {
   api.versionsFrom('METEOR@1.0');
 
-  api.use("fourseven:scss@1.0.0", ['client', 'server']);
-  api.imply('fourseven:scss@1.0.0', ['client', 'server']);
+  api.use("fourseven:scss@2.1.1", ['client', 'server']);
+  api.imply('fourseven:scss@2.1.1', ['client', 'server']);
   api.use(['ui', 'jquery', 'templating'], 'client');
 
   api.addFiles([
@@ -89,7 +89,7 @@ Package.onTest(function(api) {
   api.versionsFrom('METEOR@1.0');
 
   api.use("matthew:foundation5-sass@1.0.0");
-  api.use(["fourseven:scss@1.0.0", "tinytest@1.0.0", "test-helpers", "templating"]);
+  api.use(["fourseven:scss@2.1.1", "tinytest@1.0.0", "test-helpers", "templating"]);
 
   api.addFiles([
       "test.html",
